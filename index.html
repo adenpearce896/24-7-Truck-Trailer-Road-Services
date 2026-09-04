@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Types of Truck and Trailer Failures Require Immediate 24/7 Roadside Service?</title>
+
+    <!-- Google Fonts for Premium Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ----- Reset & Base ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #f5f6f8;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- Header with Proper Logo ----- */
+        .site-header {
+            background: #ffffff;
+            border-bottom: 2px solid #f0f0f0;
+            padding: 18px 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px 20px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-area img {
+            max-height: 55px;
+            width: auto;
+            display: block;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-area img:hover {
+            transform: scale(1.02);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.15;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.2px;
+        }
+
+        .brand-name a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: color 0.25s;
+        }
+
+        .brand-name a:hover {
+            color: #B38200;
+        }
+
+        .brand-name .highlight {
+            color: #B38200;
+        }
+
+        .brand-tagline {
+            font-size: 0.55rem;
+            font-weight: 600;
+            color: #B38200;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Desktop Contact */
+        .contact-info-desktop {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .contact-info-desktop a {
+            color: #2c2c2c;
+            text-decoration: none;
+            transition: all 0.25s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 30px;
+            background: rgba(179, 130, 0, 0.05);
+            border: 1px solid rgba(179, 130, 0, 0.08);
+        }
+
+        .contact-info-desktop a:hover {
+            color: #B38200;
+            background: rgba(179, 130, 0, 0.10);
+            border-color: rgba(179, 130, 0, 0.20);
+        }
+
+        .contact-info-desktop .address-label {
+            color: #4a4a4a;
+            font-weight: 400;
+            padding: 6px 14px;
+            background: rgba(0, 0, 0, 0.02);
+            border-radius: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            font-size: 0.82rem;
+        }
+
+        /* Mobile Nav Toggle */
+        .mobile-nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 28px;
+            height: 20px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .mobile-nav-toggle .bar {
+            display: block;
+            width: 100%;
+            height: 2.5px;
+            background-color: #1a1a1a;
+            border-radius: 2px;
+            transition: all 0.25s ease-in-out;
+            transform-origin: center;
+        }
+
+        .mobile-nav-toggle.active .bar:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+        .mobile-nav-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .mobile-nav-toggle.active .bar:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        .mobile-nav {
+            display: none;
+            background: #ffffff;
+            padding: 18px 24px 22px;
+            border-top: 2px solid #f0f0f0;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .mobile-nav.active {
+            display: flex;
+        }
+
+        .mobile-nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.2s;
+        }
+
+        .mobile-nav a:last-child {
+            border-bottom: none;
+        }
+        .mobile-nav a:hover {
+            color: #B38200;
+            padding-left: 8px;
+        }
+
+        /* ----- Main Content ----- */
+        main.main-content {
+            padding: 48px 0 58px;
+            background: linear-gradient(180deg, #f5f6f8 0%, #e8eaed 100%);
+        }
+
+        .article-wrapper {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 48px 54px 52px;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(200, 200, 200, 0.10);
+            position: relative;
+        }
+
+        .article-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #B38200, #D4A017, #B38200);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .top-badge {
+            display: inline-block;
+            background: rgba(179, 130, 0, 0.07);
+            color: #B38200;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 4px 16px;
+            border-radius: 30px;
+            margin-bottom: 14px;
+            border: 1px solid rgba(179, 130, 0, 0.10);
+        }
+
+        .article-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #1a1a1a;
+            margin-bottom: 14px;
+            letter-spacing: -0.5px;
+        }
+
+        .article-meta {
+            font-size: 0.82rem;
+            color: #6a6a6a;
+            margin-bottom: 30px;
+            padding-bottom: 18px;
+            border-bottom: 2px dashed rgba(179, 130, 0, 0.12);
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .article-meta::before {
+            content: '🚛';
+            font-size: 0.95rem;
+            opacity: 0.6;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: #2a2a2a;
+            font-weight: 400;
+            line-height: 1.85;
+        }
+
+        .article-body h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.9rem;
+            font-weight: 700;
+            margin: 2.4rem 0 0.8rem;
+            color: #8B6914;
+            line-height: 1.3;
+            letter-spacing: -0.3px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .article-body h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.1em;
+            bottom: 0.1em;
+            width: 4px;
+            background: linear-gradient(180deg, #B38200, #D4A017);
+            border-radius: 4px;
+        }
+
+        .article-body a {
+            color: #B38200;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(179, 130, 0, 0.15);
+            transition: all 0.25s;
+        }
+
+        .article-body a:hover {
+            color: #8B6914;
+            border-bottom-color: #8B6914;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, #fdf8ed, #faf3e0);
+            border-left: 5px solid #B38200;
+            padding: 20px 28px;
+            margin: 30px 0 32px;
+            border-radius: 0 14px 14px 0;
+            box-shadow: 0 4px 12px rgba(179, 130, 0, 0.04);
+        }
+
+        .info-box p {
+            margin-bottom: 0.2rem;
+            font-size: 1.02rem;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box strong {
+            color: #8B6914;
+            font-weight: 700;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin: 46px 0 32px;
+            background: linear-gradient(135deg, #fdf8ed, #faf3e0);
+            border-radius: 18px;
+            padding: 30px 38px 36px;
+            border: 1px solid rgba(179, 130, 0, 0.08);
+            box-shadow: 0 8px 24px rgba(179, 130, 0, 0.02);
+        }
+
+        .faq-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.9rem;
+            margin-top: 0;
+            color: #8B6914;
+            border-bottom: 2px solid #B38200;
+            padding-bottom: 14px;
+            margin-bottom: 26px;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .faq-section h2::before {
+            display: none;
+        }
+
+        .faq-item {
+            margin-bottom: 22px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-item h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-item h4::before {
+            content: '🔧';
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .faq-item p {
+            font-size: 0.98rem;
+            color: #333;
+            margin-bottom: 0;
+            padding-left: 28px;
+        }
+
+        /* Map Section */
+        .map-section {
+            margin: 46px 0 22px;
+            background: linear-gradient(135deg, #fdf8ed, #faf3e0);
+            border-radius: 18px;
+            padding: 32px 38px 38px;
+            text-align: center;
+            border: 1px solid rgba(179, 130, 0, 0.08);
+            box-shadow: 0 8px 24px rgba(179, 130, 0, 0.02);
+        }
+
+        .map-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #8B6914;
+            margin-bottom: 4px;
+        }
+
+        .map-section .map-sub {
+            font-size: 0.98rem;
+            color: #4d4d4d;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            max-width: 100%;
+            height: 380px;
+            border: 0;
+            border-radius: 14px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .map-section iframe:hover {
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ----- Buttons (Mustard Yellow) ----- */
+        .btn-mustard {
+            display: inline-block;
+            background: linear-gradient(135deg, #B38200, #D4A017);
+            color: #ffffff;
+            padding: 13px 42px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 20px rgba(179, 130, 0, 0.20);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-mustard::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            transform: scale(0.8);
+        }
+
+        .btn-mustard:hover {
+            background: linear-gradient(135deg, #8F6A00, #B38200);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(179, 130, 0, 0.30);
+        }
+
+        .btn-mustard:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .btn-mustard:active {
+            transform: scale(0.97);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #ffffff;
+            border-top: 2px solid #f0f0f0;
+            padding: 28px 0 24px;
+            font-size: 0.88rem;
+            color: #4a4a4a;
+            background: linear-gradient(180deg, #ffffff, #f8f9fa);
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px 20px;
+        }
+
+        .footer-inner a {
+            color: #B38200;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer-inner a:hover {
+            color: #8B6914;
+            text-decoration: underline;
+        }
+
+        .footer-addr {
+            font-size: 0.88rem;
+            color: #555;
+        }
+
+        /* ----- Responsive ----- */
+        @media (max-width: 992px) {
+            .article-title {
+                font-size: 2.3rem;
+            }
+            .article-wrapper {
+                padding: 34px 32px 38px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .site-header {
+                padding: 12px 0;
+            }
+
+            .contact-info-desktop {
+                display: none;
+            }
+
+            .mobile-nav-toggle {
+                display: flex;
+            }
+
+            .logo-area img {
+                max-height: 40px;
+            }
+            .brand-name {
+                font-size: 1.05rem;
+            }
+            .brand-tagline {
+                font-size: 0.5rem;
+                letter-spacing: 1.5px;
+            }
+
+            .article-title {
+                font-size: 1.8rem;
+            }
+
+            .article-body p {
+                font-size: 0.98rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.55rem;
+                padding-left: 14px;
+            }
+
+            .article-wrapper {
+                padding: 26px 18px 28px;
+            }
+
+            .map-section iframe {
+                height: 240px;
+            }
+            .map-section {
+                padding: 22px 16px 24px;
+            }
+            .faq-section {
+                padding: 22px 16px 24px;
+            }
+            .info-box {
+                padding: 14px 16px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-area img {
+                max-height: 34px;
+            }
+            .brand-name {
+                font-size: 0.9rem;
+            }
+            .brand-tagline {
+                font-size: 0.45rem;
+                letter-spacing: 1px;
+            }
+
+            .article-title {
+                font-size: 1.4rem;
+            }
+            .article-wrapper {
+                padding: 18px 14px 20px;
+            }
+            .mobile-nav a {
+                font-size: 0.85rem;
+            }
+            .btn-mustard {
+                padding: 10px 24px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER with Logo Image ===== -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <!-- Logo + Business Name -->
+            <div class="logo-area">
+                <a href="https://247trucktrailerrepair.com/"></a>
+                <div class="brand-text">
+                    <span class="brand-name">
+                        <a href="https://247trucktrailerrepair.com/">24/7 <span class="highlight">Truck</span> &amp; <span class="highlight">Trailer</span> Repair</a>
+                    </span>
+                    <span class="brand-tagline">Compton • Mobile Truck &amp; Trailer Repair</span>
+                </div>
+            </div>
+
+            <!-- Desktop Contact -->
+            <div class="contact-info-desktop">
+                <a href="tel:+15627867274">📞 (562) 786-7274</a>
+                <span class="address-label">📍 120 E Caldwell St, Compton, CA 90220</span>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle contact menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="tel:+15627867274">📞 (562) 786-7274</a>
+            <a href="https://maps.app.goo.gl/ErnQSYx91Du617P5A" target="_blank" rel="noopener noreferrer">📍 120 E Caldwell St, Compton, CA 90220</a>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main-content">
+        <div class="container">
+
+            <article class="article-wrapper">
+
+                <!-- Top Badge -->
+                <div class="top-badge">24/7 Emergency Roadside Assistance</div>
+
+                <!-- Title -->
+                <h1 class="article-title">
+                    What Types of Truck and Trailer Failures Require Immediate 24/7 Roadside Service?
+                </h1>
+
+                <div class="article-meta">
+                    Published by 24/7 Truck and Trailer Repair &bull; Compton, CA
+                </div>
+
+                <!-- ===== ARTICLE BODY ===== -->
+                <div class="article-body">
+
+                    <!-- Paragraph 1 – with GMB link -->
+                    <p>
+                        A commercial truck or trailer can develop a serious problem without warning. When that happens, continuing to drive may increase damage, create a safety risk, or cause a major delivery delay. For fleet operators and independent drivers, knowing when to call for roadside help is an important part of managing an unexpected breakdown.
+                    </p>
+
+                    <p>
+                        A reliable <a href="https://maps.app.goo.gl/ErnQSYx91Du617P5A" target="_blank" rel="noopener noreferrer">24/7 Truck and Trailer Road Service in Compton CA</a> gives drivers access to professional assistance when a vehicle becomes disabled on the road. Immediate support can help identify the problem, determine whether an on-site repair is possible, and decide whether the vehicle should be moved to a repair facility.
+                    </p>
+
+                    <p>
+                        Not every issue requires emergency roadside service. However, failures involving critical systems should receive prompt attention. Understanding these warning signs can help drivers make safer and more practical decisions during a breakdown.
+                    </p>
+
+                    <!-- Section: Brake System Failures That Affect Vehicle Safety -->
+                    <h2>Brake System Failures That Affect Vehicle Safety</h2>
+
+                    <p>
+                        Brake problems should always be treated as serious issues on heavy-duty vehicles. Trucks and trailers carry significant weight, which means a braking problem can quickly become dangerous.
+                    </p>
+
+                    <p>
+                        A driver may notice reduced braking performance, unusual noises, air pressure warnings, pulling to one side, or a change in pedal response. Air brake problems can also prevent the vehicle from operating normally.
+                    </p>
+
+                    <p>
+                        A roadside technician can inspect visible brake components and related air systems to determine whether a repair can safely be completed at the breakdown location.
+                    </p>
+
+                    <p>
+                        When a brake failure affects stopping ability, continuing to drive should not be treated as a normal operating decision. Professional <strong>Truck and Trailer roadside assistance</strong> can help assess the situation and determine the safest next step.
+                    </p>
+
+                    <!-- Section: Tire Blowouts and Serious Tire Damage -->
+                    <h2>Tire Blowouts and Serious Tire Damage</h2>
+
+                    <p>
+                        Tire failures are among the most common reasons commercial vehicles require roadside assistance. A blowout can leave a truck or trailer disabled, especially when a spare or replacement tire is not readily available.
+                    </p>
+
+                    <p>
+                        Drivers should also take serious damage such as sidewall failure, major tread separation, or severe punctures seriously.
+                    </p>
+
+                    <p>
+                        A technician can inspect the damaged tire, wheel, and surrounding components. Depending on the vehicle and available equipment, the tire may be replaced or repaired at the roadside.
+                    </p>
+
+                    <p>
+                        Continuing to operate with a damaged commercial tire can create additional safety problems and may lead to damage to other components.
+                    </p>
+
+                    <p>
+                        Prompt <strong>24/7 Truck and Trailer Road Service</strong> can help reduce the amount of time the vehicle remains stopped.
+                    </p>
+
+                    <!-- Section: Engine Problems That Cause Loss of Power -->
+                    <h2>Engine Problems That Cause Loss of Power</h2>
+
+                    <p>
+                        An engine that suddenly loses power can create major problems for a commercial truck. Symptoms may include severe performance loss, unusual smoke, overheating, warning lights, rough running, or failure to start.
+                    </p>
+
+                    <p>
+                        Some engine problems may be electrical, fuel-related, cooling-related, or mechanical. A proper diagnosis helps determine which system is responsible.
+                    </p>
+
+                    <p>
+                        A <strong>Truck engine diagnostic in Compton CA</strong> can provide useful information about electronically monitored engine systems. Technicians may combine diagnostic data with physical inspection to identify the likely source of the failure.
+                    </p>
+
+                    <p>
+                        If the issue can be repaired using mobile equipment, roadside service may allow the truck to return to operation without a shop visit. More serious engine failures may require transportation to a <strong>Truck and Trailer repair shop</strong>.
+                    </p>
+
+                    <!-- Section: Electrical and Starting System Failures -->
+                    <h2>Electrical and Starting System Failures</h2>
+
+                    <p>
+                        Electrical problems can stop a commercial vehicle even when the engine and mechanical systems are otherwise functional. Dead batteries, charging system failures, damaged wiring, faulty connections, and starter problems can all prevent normal operation.
+                    </p>
+
+                    <p>
+                        Some electrical faults are straightforward to identify, while intermittent problems may require more detailed testing.
+                    </p>
+
+                    <p>
+                        A roadside technician can inspect batteries, cables, connections, fuses, charging components, and other accessible areas. Diagnostic equipment may also help identify certain faults.
+                    </p>
+
+                    <p>
+                        Fast assistance can be especially important when a truck is stranded in an unsafe location or when a failed electrical system affects essential lighting or other vehicle functions.
+                    </p>
+
+                    <!-- Section: Air System Problems on Trucks and Trailers -->
+                    <h2>Air System Problems on Trucks and Trailers</h2>
+
+                    <p>
+                        Air systems are critical to many heavy-duty commercial vehicles. Air pressure supports braking and may also operate other vehicle functions.
+                    </p>
+
+                    <p>
+                        A major air leak, compressor issue, damaged air line, or valve problem can affect a truck's ability to operate safely.
+                    </p>
+
+                    <p>
+                        Drivers may notice warning lights, pressure loss, unusual hissing sounds, or slow pressure buildup.
+                    </p>
+
+                    <p>
+                        A professional technician can inspect the air system and identify visible leaks or failed components. Some repairs may be completed at the roadside, while larger system failures may require additional shop service.
+                    </p>
+
+                    <p>
+                        This is why <strong>commercial trucks and trailers service in Compton CA</strong> should include experienced technicians familiar with heavy-duty air systems and their related components.
+                    </p>
+
+                    <!-- Section: Trailer Brake, Lighting, and Wiring Failures -->
+                    <h2>Trailer Brake, Lighting, and Wiring Failures</h2>
+
+                    <p>
+                        A trailer can create a serious roadside problem even when the truck itself is operating normally. Trailer brakes, lights, wiring, air connections, and suspension systems can fail independently.
+                    </p>
+
+                    <p>
+                        Lighting failures may affect visibility and road safety, while brake or air system problems may make the trailer unsafe to tow.
+                    </p>
+
+                    <p>
+                        Technicians providing <strong>Truck and Trailer roadside assistance</strong> can inspect the trailer and determine whether the issue can be resolved at the breakdown location.
+                    </p>
+
+                    <p>
+                        A complete assessment is important because repairing one component does not necessarily mean the entire trailer is ready to return to service.
+                    </p>
+
+                    <!-- Section: Suspension and Steering Problems -->
+                    <h2>Suspension and Steering Problems</h2>
+
+                    <p>
+                        Suspension and steering problems can affect vehicle control, tire wear, ride quality, and safety.
+                    </p>
+
+                    <p>
+                        Warning signs may include unusual pulling, uneven tire wear, excessive bouncing, visible component damage, abnormal movement, or difficulty maintaining control.
+                    </p>
+
+                    <p>
+                        A damaged suspension component may also affect how a heavy load is supported.
+                    </p>
+
+                    <p>
+                        A roadside technician can inspect suspension components, steering-related parts, and surrounding areas to identify visible damage.
+                    </p>
+
+                    <p>
+                        If a critical component has failed, the safest choice may be to stop the vehicle and arrange further repair or towing rather than continue driving.
+                    </p>
+
+                    <!-- Section: Transmission and Drivetrain Failures -->
+                    <h2>Transmission and Drivetrain Failures</h2>
+
+                    <p>
+                        Transmission and drivetrain problems can leave a commercial vehicle unable to move or unable to transfer engine power correctly.
+                    </p>
+
+                    <p>
+                        Drivers may notice slipping, delayed shifting, unusual vibration, grinding noises, or a complete loss of movement.
+                    </p>
+
+                    <p>
+                        Some electronic or external issues may be diagnosable at the roadside. However, internal transmission failures can require specialized shop equipment.
+                    </p>
+
+                    <p>
+                        A professional technician can determine whether a roadside repair is practical or whether the vehicle needs to be transported to a repair facility.
+                    </p>
+
+                    <p>
+                        Avoiding unnecessary attempts to drive a vehicle with a serious drivetrain problem can help prevent additional damage.
+                    </p>
+
+                    <!-- Section: Overheating and Cooling System Emergencies -->
+                    <h2>Overheating and Cooling System Emergencies</h2>
+
+                    <p>
+                        Engine overheating requires immediate attention because continued operation can cause severe damage.
+                    </p>
+
+                    <p>
+                        Drivers may notice high temperature readings, warning messages, coolant leaks, steam, unusual smells, or visible signs of a cooling system failure.
+                    </p>
+
+                    <p>
+                        A technician can inspect coolant levels, hoses, radiators, fans, and other accessible components to identify the likely issue.
+                    </p>
+
+                    <p>
+                        The vehicle should be allowed to cool before inspection where appropriate. The exact repair depends on the cause of overheating.
+                    </p>
+
+                    <p>
+                        Emergency roadside assistance can help determine whether the issue can be corrected at the location or whether the truck should be transported for further repair.
+                    </p>
+
+                    <!-- Section: When Multiple Failures Happen at the Same Time -->
+                    <h2>When Multiple Failures Happen at the Same Time</h2>
+
+                    <p>
+                        Commercial vehicles sometimes experience several problems during one roadside event. For example, a tire failure may occur alongside suspension damage, or an electrical problem may appear with an engine issue.
+                    </p>
+
+                    <p>
+                        In these situations, treating only the most obvious symptom may not be enough.
+                    </p>
+
+                    <p>
+                        A professional roadside technician should evaluate both the truck and trailer where applicable. The goal is to understand what caused the breakdown and identify any additional problems that could affect safe operation.
+                    </p>
+
+                    <p>
+                        A coordinated response can be more efficient than arranging separate services for each issue.
+                    </p>
+
+                    <p>
+                        For companies operating heavy-duty fleets, <strong>commercial trucks and trailers service in Compton CA</strong> can help provide broader support for complex roadside events.
+                    </p>
+
+                    <!-- Section: How 24/7 Truck and Trailer Road Service Supports Compton Drivers -->
+                    <h2>How 24/7 Truck and Trailer Road Service Supports Compton Drivers</h2>
+
+                    <p>
+                        Breakdowns can happen at any time. Commercial vehicles may operate during overnight hours, weekends, holidays, and busy delivery periods. Waiting until a repair shop opens may create unnecessary delays.
+                    </p>
+
+                    <p>
+                        A dependable <strong>24/7 Truck and Trailer Road Service in Compton CA</strong> provides access to emergency support when critical truck or trailer failures occur.
+                    </p>
+
+                    <p>
+                        The technician can assess the vehicle, perform appropriate diagnostics, complete eligible roadside repairs, and determine whether additional shop service is needed.
+                    </p>
+
+                    <p>
+                        For fleet operators, fast roadside response can also help dispatchers make better decisions about routes, replacement vehicles, cargo transfers, and delivery schedules.
+                    </p>
+
+                    <p>
+                        The goal is not simply to get a disabled vehicle moving again. It is to restore safe operation when possible and provide a clear recovery plan when a larger repair is required.
+                    </p>
+
+                    <!-- ===== FAQ SECTION ===== -->
+                    <div class="faq-section">
+                        <h2>Frequently Asked Questions</h2>
+
+                        <div class="faq-item">
+                            <h4>When should I call 24/7 truck and trailer roadside service?</h4>
+                            <p>Call when a critical failure leaves the vehicle disabled or creates a safety concern, such as major brake, tire, air system, engine, electrical, steering, suspension, or trailer problems.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Can a roadside technician repair an engine problem on site?</h4>
+                            <p>Some engine-related issues may be repaired with mobile equipment, while major mechanical failures may require shop-based service. A <strong>Truck engine diagnostic in Compton CA</strong> can help determine the likely cause before making that decision.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Are trailer problems covered by roadside assistance?</h4>
+                            <p>Yes, depending on the provider. Trailer roadside service may address certain tire, lighting, wiring, brake, air, and mechanical problems.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Is it safe to drive a truck after a temporary roadside repair?</h4>
+                            <p>That depends on the problem and repair. A qualified technician should assess whether the vehicle is safe to continue operating before it returns to the road.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Why is 24/7 service important for commercial trucks?</h4>
+                            <p>Commercial trucks operate around the clock. A 24/7 service gives drivers access to support during nights, weekends, and holidays when many traditional repair facilities may be unavailable.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== CONCLUSION ===== -->
+                    <h2>Conclusion</h2>
+
+                    <p>
+                        Some truck and trailer failures should never be treated as minor inconveniences. Brake problems, tire damage, engine failures, electrical faults, air system issues, suspension concerns, and serious trailer defects can affect both safety and business operations.
+                    </p>
+
+                    <p>
+                        <strong>24/7 Truck and Trailer Road Service in Compton CA</strong> can help drivers respond to these situations with professional inspection, diagnostics, emergency repair, and practical recovery guidance.
+                    </p>
+
+                    <p>
+                        <a href="https://247trucktrailerrepair.com/" target="_blank" rel="noopener noreferrer">24/7 Truck and Trailer Repair</a> can help drivers respond to these situations with professional inspection, diagnostics, emergency repair, and practical recovery guidance.
+                    </p>
+
+                    <p>
+                        For fleet operators and commercial drivers, knowing when to request roadside support can prevent further vehicle damage and reduce unnecessary downtime. When a breakdown occurs, the right response starts with safety, accurate diagnosis, and a clear plan for getting the vehicle back into service.
+                    </p>
+
+                </div>
+                <!-- /article-body -->
+
+                <!-- ===== MAP SECTION ===== -->
+                <div class="map-section">
+                    <h3>Find Us on Google Maps</h3>
+                    <p class="map-sub">24/7 Truck and Trailer Repair &bull; 120 E Caldwell St, Compton, CA 90220</p>
+
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.8419008379!2d-118.22488267692502!3d33.884622300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cb221f50ed67%3A0xba4f893dfc9fa846!2s24%2F7%20truck%20and%20trailer%20repair!5e1!3m2!1sen!2s!4v1788558728528!5m2!1sen!2s"
+                    width="600"
+                    height="380"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+
+                <div style="margin-top: 22px;">
+                    <a href="https://maps.app.goo.gl/ErnQSYx91Du617P5A" target="_blank" rel="noopener noreferrer" class="btn-mustard">
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <!-- Extra subtle link -->
+            <div class="text-center" style="margin: 20px 0 8px;">
+                <a href="https://247trucktrailerrepair.com/" target="_blank" rel="noopener noreferrer" style="color:#B38200; font-weight:500; text-decoration:underline;">Visit our website</a> for more information about our roadside services.
+            </div>
+
+        </article>
+
+    </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+
+        <div class="footer-addr">
+            &copy; 2026 <a href="https://247trucktrailerrepair.com/">24/7 Truck and Trailer Repair</a> &bull;
+            120 E Caldwell St, Compton, CA 90220
+        </div>
+
+        <div>
+            <a href="tel:+15627867274">(562) 786-7274</a> &bull;
+            <a href="mailto:hernandezjose0921@gmail.com">hernandezjose0921@gmail.com</a>
+        </div>
+
+    </div>
+</footer>
+
+<!-- ===== TOGGLE SCRIPT ===== -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggle = document.getElementById('navToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (toggle && mobileNav) {
+            toggle.addEventListener('click', function() {
+                const isActive = mobileNav.classList.toggle('active');
+                toggle.classList.toggle('active');
+                toggle.setAttribute('aria-expanded', isActive);
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
